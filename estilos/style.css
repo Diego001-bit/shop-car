@@ -14,18 +14,14 @@
     --cor3:#404040;
     --cor4:#f00000;
 }
-
 #bur-menu{
     font-size: 4em;
 }
 header{
     display: flex;
-    height: 110px;
-    position: absolute;
-    left: 50px;
-    top: 20px;
-    right: 30px;
-    align-items: end;
+    height: 120px;
+    align-items: flex-end;
+    width: 100%;
     
 }
 main{
@@ -133,16 +129,6 @@ p{
     height: 100%;
 }
 @media screen and (max-width:1024px) {
-    header{
-        display: flex;
-        height: 110px;
-        position: absolute;
-        left: 30px;
-        top: 20px;
-        right: 30px;
-        align-items: end;
-        
-    }
     #sc{
         width: 80px;
     }
@@ -163,6 +149,19 @@ p{
         transition-duration: 1.5s;
         color: white;
         cursor: pointer;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        min-width: 280px;
+        min-height: 880px;
+        background-size: cover;
+        background-position: center center;
     }
     main{
         display: flex;
@@ -188,10 +187,9 @@ p{
     }
     article{
         display: flex;
-        justify-content: center;
         align-items: center;
         width: 97%;
-        height: 97%;
+        height: 100%;
         background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.199),var(--cor0));
         min-height: 720px;
         border: 6px solid rgba(255, 255, 255, 0.671);
@@ -242,18 +240,9 @@ p{
     }
 }
 @media screen and (max-width:720px){
-    header{
-        display: flex;
-        height: 110px;
-        position: absolute;
-        left: 30px;
-        top: 20px;
-        right: 30px;
-        align-items: end;
-        
-    }
+
     #sc{
-        width: 60px;
+        width: 50px;
     }
     menu{
         display: flex;
@@ -285,7 +274,7 @@ p{
         background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
-        min-height: 800px;
+        max-height: 800px;
         background-size: cover;
         background-position: center center;
     }
@@ -298,17 +287,7 @@ p{
         justify-content: center;
         align-items: center;
         height: 150px;
-        font-size: 3.8em;
-    }
-    article{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 97%;
-        height: 97%;
-        background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.199),var(--cor0));
-        min-height: 720px;
-        border: 6px solid rgba(255, 255, 255, 0.671);
+        font-size: 3.5em;
     }
     #esc-bv{
         width: 75%;
@@ -320,7 +299,7 @@ p{
         flex-direction: column;
         justify-content:space-around;
         align-items: center;
-        height: 400px;
+        height: 200px;
         margin: 80px;
     }
     p{
@@ -332,12 +311,11 @@ p{
         font-style: italic;
         font-weight: lighter;
         margin-bottom: 20px;
-        width: 100%;
+        width: 90%;
     }
     #par-car{
         display: flex;
         align-items: center;
-        
     }
     .timagens{
         border-radius: 6px;
@@ -355,20 +333,10 @@ p{
         height: 100%;
     }
 }
-@media screen and (max-width:420px){
-    header{
-        width: 100%;
-        display: flex;
-        height: 60px;
-        position: absolute;
-        left: 20px;
-        top: 50px;
-        right: 30px;
-        align-items: end;
-        
-    }
+@media screen and (max-width:320px){
+
     #sc{
-        width: 50px;
+        width: 35px;
     }
     menu{
         display: flex;
@@ -388,10 +356,6 @@ p{
         color: white;
         cursor: pointer;
     }
-    main{
-        width: 100vw;
-        height: 100vh;
-    }
     body{
         display: flex;
         justify-content: center;
@@ -400,7 +364,8 @@ p{
         flex-direction: column;
         width: 100%;
         height: 100vh;
-        min-height: 680px;
+        min-width: 280px;
+        max-height: 660px;
         background-size: cover;
         background-position: center center;
     }
@@ -414,22 +379,12 @@ p{
         align-items: center;
         font-size: 3.2em;
     }
-    article{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 97%;
-        height: 97%;
-        background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.199),var(--cor0));
-        min-height: 720px;
-        border: 6px solid rgba(255, 255, 255, 0.671);
-    }
     #esc-bv{
         width: 75%;
     }
     #par-baixa{
         display: flex;
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content:space-around;
