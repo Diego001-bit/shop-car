@@ -19,7 +19,7 @@
 }
 header{
     display: flex;
-    height: 120px;
+    margin: 10px;
     align-items: flex-end;
     width: 100%;
     
@@ -82,19 +82,20 @@ h2{
 article{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 97%;
     height: 97%;
     background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.199),var(--cor0));
     border: 6px solid rgba(255, 255, 255, 0.671);
 }
+
 #esc-bv{
     width: 40%;
 }
 #par-baixa{
-    display: flex;
-    width: 100%;
+    width: 90%;
+    height: 100%;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -132,10 +133,21 @@ p{
     #sc{
         width: 80px;
     }
+    body{
+        min-height: 915px;
+    }
     menu{
         display: flex;
         justify-content: center;
     
+    }
+    #par-baixa{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
     }
     .itmenu{
         display: flex;
@@ -150,62 +162,29 @@ p{
         color: white;
         cursor: pointer;
     }
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-repeat: no-repeat;
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        min-width: 280px;
-        min-height: 880px;
-        background-size: cover;
-        background-position: center center;
-    }
-    main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        min-height: 800px;
-        background-size: cover;
-        background-position: center center;
-    }
+
+
     h2{
-        margin-top: 110px;
+
         text-shadow: 8px 1px 4px rgba(0, 0, 0, 0.342);
         color: var(--cor4);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 230px;
         font-size: 6em;
     }
     article{
         display: flex;
         align-items: center;
         width: 97%;
-        height: 100%;
+        height: 97vh;
         background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.199),var(--cor0));
         min-height: 720px;
         border: 6px solid rgba(255, 255, 255, 0.671);
     }
     #esc-bv{
         width: 75%;
-    }
-    #par-baixa{
-        display: flex;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        align-items: center;
-        height: 400px;
-        margin: 80px;
     }
     p{
         text-indent: 20px;
@@ -217,11 +196,6 @@ p{
         font-weight: 300;
         margin-bottom: 20px;
         width: 100%;
-    }
-    #par-car{
-        display: flex;
-        align-items: center;
-        
     }
     .timagens{
         border-radius: 6px;
@@ -274,7 +248,8 @@ p{
         background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
-        max-height: 800px;
+        min-height: 740px;
+        max-height: 1024px;
         background-size: cover;
         background-position: center center;
     }
@@ -287,7 +262,7 @@ p{
         justify-content: center;
         align-items: center;
         height: 150px;
-        font-size: 3.5em;
+        font-size: 3.4em;
     }
     #esc-bv{
         width: 75%;
@@ -300,7 +275,7 @@ p{
         justify-content:space-around;
         align-items: center;
         height: 200px;
-        margin: 80px;
+        margin: 100px;
     }
     p{
         text-indent: 20px;
@@ -311,7 +286,7 @@ p{
         font-style: italic;
         font-weight: lighter;
         margin-bottom: 20px;
-        width: 90%;
+        width: 100%;
     }
     #par-car{
         display: flex;
@@ -334,7 +309,6 @@ p{
     }
 }
 @media screen and (max-width:320px){
-
     #sc{
         width: 35px;
     }
@@ -365,6 +339,7 @@ p{
         width: 100%;
         height: 100vh;
         min-width: 280px;
+        
         max-height: 660px;
         background-size: cover;
         background-position: center center;
@@ -397,7 +372,7 @@ p{
         text-align: center;
         font-family: "Inter", sans-serif;
         color: white;
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-style: italic;
         font-weight: 300;
         margin-bottom: 20px;
