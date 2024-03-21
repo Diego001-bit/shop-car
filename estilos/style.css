@@ -107,7 +107,7 @@ p{
     color: white;
     font-size: 2em;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 300;
     margin: 10px;
 }
 #par-car{
@@ -188,14 +188,8 @@ p{
     }
     p{
         text-indent: 20px;
-        text-align: center;
-        font-family: "Inter", sans-serif;
-        color: white;
         font-size: 1.6em;
-        font-style: italic;
         font-weight: 300;
-        margin-bottom: 20px;
-        width: 100%;
     }
     .timagens{
         border-radius: 6px;
