@@ -32,8 +32,13 @@ header{
     display: flex;
     margin: 10px;
     align-items: flex-end;
-    width: 100%;
+    width: 90%;
     
+}
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main{
     width: 97vw;
@@ -130,7 +135,7 @@ p{
 }
 .timagens:hover{
     transition-duration: 1.5s;
-    box-shadow: 2px 4px 2px black;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.37);
 }
 .timagens>img{
     width: 100%;
@@ -142,6 +147,11 @@ p{
     }
     body{
         min-height: 915px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
     }
     menu{
         display: flex;
@@ -224,6 +234,15 @@ p{
         justify-content: center;
     
     }
+    article{
+        display: flex;
+        align-items: center;
+        width: 92%;
+        height: 97vh;
+        background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.199),var(--cor0));
+        min-height: 720px;
+        border: 6px solid rgba(255, 255, 255, 0.671);
+    }
     .itmenu{
         display: flex;
         flex-direction: column;
@@ -246,14 +265,12 @@ p{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-image: url("../imagens/porsche.jpg");
+        background-image: url("../imagens/porsche-cl.jpg");
         background-repeat: no-repeat;
         width: 96.6%;
         height: 100vh;
         min-height: 740px;
         max-height: 1024px;
-        background-size: cover;
-        background-position: center center;
     }
     h2{
         margin-top: 110px;
@@ -264,7 +281,7 @@ p{
         justify-content: center;
         align-items: center;
         height: 150px;
-        font-size: 3.4em;
+        font-size: 3em;
     }
     #esc-bv{
         width: 75%;
@@ -276,15 +293,14 @@ p{
         flex-direction: column;
         justify-content:space-around;
         align-items: center;
-        height: 200px;
-        margin: 100px;
+        margin-bottom: 100px;
     }
     p{
         text-indent: 20px;
         text-align: center;
         font-family: "Inter", sans-serif;
         color: white;
-        font-size: 1.6em;
+        font-size: 1.4em;
         font-style: italic;
         font-weight: lighter;
         margin-bottom: 20px;
@@ -374,7 +390,7 @@ p{
         text-align: center;
         font-family: "Inter", sans-serif;
         color: white;
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-style: italic;
         font-weight: 300;
         margin-bottom: 20px;
