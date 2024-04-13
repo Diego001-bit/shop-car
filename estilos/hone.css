@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
 
+*{
+    padding: 0px;
+    margin: 0px;
+}
 :root{
     --cor0:rgba(191, 4, 19, 0.5);
     --cor1:rgba(13, 13, 13, 1);
@@ -41,7 +45,7 @@ header{
     display: flex;
     position: relative;
     margin-right: 15px;
-    font-size: 3.5em;
+    font-size: 3em;
     cursor: pointer;
 }
 html{
@@ -136,7 +140,7 @@ main{
     }
     
     #esc-bv{
-        width: 80%;
+        width: 100%;
     }
     #par-baixa{
         width: 100%;
@@ -147,36 +151,93 @@ main{
         justify-content: space-evenly;
     }
     p{
-        display: block;
         text-indent: 20px;
         text-align: center;
         font-family: "Inter", sans-serif;
         color: white;
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-style: italic;
         font-weight: 300;
         margin: 10px;
-        width: 100%;
     }
     #par-car{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        
     }
     .timagens{
-        border-radius: 6px;
-        border: 4px solid var(--cor0);
-        width: 30%;
+        display: flex;
+        justify-content: center;
         margin: 5px;
+        width: 30%;
     }
     .timagens:hover{
         transition-duration: 1.5s;
         box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.37);
     }
-    img{
+    .timagens>img{
         width: 100%;
-        height: 100%;
+        border-radius: 6px;
+        border: 4px solid var(--cor0);
     }
-@media screen and (min-width: 720px){
+@media screen and (min-width: 480px){
+    h2{
+        font-size: 4em;
+    }
+    p{
+        font-size: 1.8em;
+    }
+    .timagens{
+        width: 25%;
+    }
+}
+@media screen and (min-width:720px){
+    #sc{
+        width: 70px;
+    }
+    #menu-bars{
+        font-size: 4em;
+    }
+    h2{
+        font-size: 5em;
+    }
     p{
         font-size: 2em;
+    }
+    #par-baixa{
+        flex-direction: row;
+        align-items: center;
+    }
+    #par-car{
+        flex-direction: column;
+        align-items: center;
+    }
+    .timagens{
+        width: 28%;
+    }
+}
+@media screen and (min-width:900px){
+    #sc{
+        width: 80px;
+    }
+    #menu-bars{
+        font-size: 5em;
+    }
+    h2{
+        font-size: 6em;
+    }
+    .timagens{
+        width: 25%;
+        max-width: 200px;
+    }
+    #par-baixa{
+        flex-direction: row;
+        align-items: center;
+    }
+    #par-car{
+        flex-direction: row;
+        align-items: center;
     }
 }
