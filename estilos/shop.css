@@ -131,11 +131,12 @@ article{
     color: white;
 }
 #carrosamostra{
-    width: 75%;
-    height: 500px;
-    background-color: black;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
 }
 .carsavenda{
-    width: 90%;
-
+    width: 50%;
+}
+img{
+    width: 100%;
 }
