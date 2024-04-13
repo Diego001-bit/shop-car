@@ -1,0 +1,141 @@
+@charset "UTF-8";
+:root{
+    --cor0:rgba(191, 4, 19, 0.5);
+    --cor1:rgba(13, 13, 13, 1);
+    --cor2:#A6A6A6;
+    --cor3:#404040;
+    --cor4:#f00000;
+}
+a{
+    text-decoration: none;
+    font-style: normal;
+    color: var(--cor2);
+}
+a:hover{
+    transition-duration: 1.5s;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-bars2{
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 3.5em;
+    color: white;
+    transition-duration: 3s;
+}
+header{
+    display: flex;
+    margin: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 98%;
+    
+}
+#menu-bars{
+    display: flex;
+    position: relative;
+    margin-right: 15px;
+    font-size: 3.5em;
+    cursor: pointer;
+    color: white;
+}
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sc{
+    width: 80px;
+}
+menu{
+    display: flex;
+    justify-content: center;
+}
+#bloco-menu{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 50px;
+    margin: 10px;
+    transition-duration: 2s;
+
+
+
+}
+#burg-menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    right: -300px;
+    background-image: linear-gradient(to top,rgb(191, 4, 20),black);
+    transition-duration: 1s;
+    z-index: 1;
+}
+.itmenu{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px ;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 2.5em;
+    margin: 0px 5px;
+}
+.itmenu i:hover{
+    transition-duration: 1.5s;
+    color: white;
+    cursor: pointer;
+}
+.fa-solid{
+    color: var(--cor1);
+} 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97vw;
+    height: 100%;
+    border: 5px solid w;
+    flex-direction: column;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+    height: 100vh;
+    min-height: 900px;
+    background-image: url("../imagens/novo-porsche-911-gt3-r.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+#filtro{
+    position: absolute;
+    left: 0px;
+    top: 110px;
+    color: white;
+}
+#carrosamostra{
+    width: 75%;
+    height: 500px;
+    background-color: black;
+}
+.carsavenda{
+    width: 90%;
+
+}

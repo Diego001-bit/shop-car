@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --cor0:rgba(191, 4, 19, 0.5);
+    --cor1:rgba(13, 13, 13, 1);
+    --cor2:#A6A6A6;
+    --cor3:#404040;
+    --cor4:#f00000;
+}
+a{
+    text-decoration: none;
+    font-style: normal;
+    color: var(--cor2);
+}
+a:hover{
+    transition-duration: 1.5s;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-bars2{
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 3.5em;
+    color: white;
+    transition-duration: 3s;
+}
+header{
+    display: flex;
+    margin: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 98%;
+    
+}
+#menu-bars{
+    display: flex;
+    position: relative;
+    margin-right: 15px;
+    font-size: 3.5em;
+    cursor: pointer;
+}
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96vw;
+    height: 98vh;
+}
+    #sc{
+        width: 60px;
+    }
+    menu{
+        display: flex;
+        justify-content: center;
+    }
+    #bloco-menu{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 50px;
+        margin: 10px;
+        transition-duration: 2s;
+    
+    }
+    #burg-menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0px;
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        right: -300px;
+        background-image: linear-gradient(to top,rgb(191, 4, 20),black);
+        transition-duration: 1s;
+        z-index: 1;
+    }
+    .itmenu{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px ;
+        font-family: "Archivo Narrow", sans-serif;
+        font-size: 2.5em;
+        margin: 0px 5px;
+    }
+    .itmenu i:hover{
+        transition-duration: 1.5s;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-solid{
+        color: var(--cor1);
+    } 
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        min-height: 900px;
+        background-image: url("../imagens/porsche.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    h2{
+        text-shadow: 8px 1px 4px rgba(0, 0, 0, 0.342);
+        color: var(--cor4);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 230px;
+        font-size: 3em;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 97%;
+        height: 97%;
+        background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.199),var(--cor0));
+        border: 6px solid rgba(255, 255, 255, 0.671);
+    }
+    
+    #esc-bv{
+        width: 80%;
+    }
+    #par-baixa{
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    p{
+        display: block;
+        text-indent: 20px;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        color: white;
+        font-size: 1.3em;
+        font-style: italic;
+        font-weight: 300;
+        margin: 10px;
+        width: 100%;
+    }
+    #par-car{
+        display: flex;
+    }
+    .timagens{
+        border-radius: 6px;
+        border: 4px solid var(--cor0);
+        width: 30%;
+        margin: 5px;
+    }
+    .timagens:hover{
+        transition-duration: 1.5s;
+        box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.37);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+@media screen and (min-width: 720px){
+    p{
+        font-size: 2em;
+    }
+}
