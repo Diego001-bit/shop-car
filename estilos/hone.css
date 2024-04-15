@@ -27,9 +27,8 @@ a:hover{
 #menu-bars2{
     cursor: pointer;
     position: absolute;
-    top: 25px;
+    top: 30px;
     right: 10px;
-    font-size: 3.5em;
     color: white;
     transition-duration: 3s;
 }
@@ -43,10 +42,10 @@ header{
 }
 #menu-bars{
     display: flex;
-    position: relative;
+    align-items: center;
+    height: 100%;
     margin-right: 15px;
     font-size: 3em;
-    cursor: pointer;
 }
 html{
     display: flex;
@@ -70,11 +69,11 @@ main{
     #bloco-menu{
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 10px;
         height: 50px;
-        margin: 10px;
+        margin: 45px 10px;
         transition-duration: 2s;
-    
     }
     #burg-menu{
         display: flex;
@@ -92,10 +91,11 @@ main{
     .itmenu{
         display: flex;
         flex-direction: column;
+        width: 100%;
         padding: 0px 10px ;
         font-family: "Archivo Narrow", sans-serif;
         font-size: 2.5em;
-        margin: 0px 5px;
+        margin: 5px;
     }
     .itmenu i:hover{
         transition-duration: 1.5s;
@@ -231,7 +231,7 @@ main{
     }
     .timagens{
         width: 25%;
-        max-width: 200px;
+        max-width: 170px;
     }
     #par-baixa{
         flex-direction: row;
