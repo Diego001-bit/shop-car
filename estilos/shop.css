@@ -30,6 +30,13 @@ h1{
     color: var(--cor4);
     height: 100%;
 }
+h2{
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
 #menu-bars2{
     cursor: pointer;
     position: absolute;
@@ -131,13 +138,6 @@ article{
     max-width: 1000px;
     margin-top: 25px;
 }
-#filtro{
-    position: absolute;
-    left: 0px;
-    top: 100px;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 #carrosamostra{
     display: flex;
@@ -162,7 +162,17 @@ img{
     width: 100%;
     max-width: 300px;
 }
-
+#filtro{
+    background-color: black;
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    transition-duration: 1s;
+    left: 0px;
+    top: 100px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 @media (min-width:720px) {
 
 }
