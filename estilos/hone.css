@@ -184,6 +184,9 @@ main{
         border: 4px solid var(--cor0);
     }
 @media screen and (min-width: 480px){
+    body{
+        min-height: 620px;
+    }
     h2{
         font-size: 4em;
     }
@@ -195,6 +198,7 @@ main{
     }
 }
 @media screen and (min-width:720px){
+    
     #sc{
         width: 70px;
     }
