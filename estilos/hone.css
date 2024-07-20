@@ -5,6 +5,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    cursor: default;
 }
 :root{
     --cor0:rgba(191, 4, 19, 0.5);
@@ -17,11 +18,11 @@ a{
     text-decoration: none;
     font-style: normal;
     color: var(--cor2);
+    cursor: pointer;
 }
 a:hover{
     transition-duration: 1.5s;
     color: white;
-    cursor: pointer;
 }
 
 #menu-bars2{
@@ -42,6 +43,7 @@ header{
 }
 #menu-bars{
     display: flex;
+    cursor: pointer;
     align-items: center;
     height: 100%;
     margin-right: 15px;
@@ -59,7 +61,7 @@ main{
     width: 96vw;
     height: 98vh;
 }
-    #sc{
+    .sc{
         width: 60px;
     }
     menu{

@@ -25,7 +25,8 @@ a:hover{
 }
 h1{
     display: flex;
-    align-items: center;
+
+
     font-size: 3.2em;
     color: var(--cor4);
     height: 100%;
@@ -33,9 +34,6 @@ h1{
 h2{
     font-size: 2em;
     color: white;
-    position: absolute;
-    top: 70px;
-    left: 10px;
 }
 #menu-bars2{
     cursor: pointer;
@@ -46,20 +44,37 @@ h2{
     transition-duration: 3s;
 }
 header{
-    position: absolute;
-    top: 0px;
     display: flex;
-    margin: 10px;
+    height: 75px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
     align-items: flex-end;
     justify-content: space-between;
-    width: 98%;
-    
+    width: 100%;
+    background-color: var(--cor0);
+}
+.elemento-slide{
+    width: 100%;
+    max-height: 800px;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#slide{
+  margin: auto;
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  height: 240px;
 }
 #menu-bars{
     display: flex;
     position: relative;
     margin-right: 15px;
     font-size: 3.5em;
+    transition-duration: 0.5s;
     cursor: pointer;
     color: white;
 }
@@ -117,6 +132,7 @@ main{
     align-items: center;
     width: 97vw;
     height: 100vh;
+    min-height: 600px;
     flex-direction: column;
 }
 body{
@@ -135,7 +151,7 @@ article{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1400px;
     margin-top: 25px;
 }
 
@@ -145,7 +161,7 @@ article{
     width: 100%;
     background-color: var(--cor0);
     justify-content: center;
-    margin-top: 100px;
+
     padding-bottom: 10px;
 }
 .carsavenda{
@@ -162,15 +178,17 @@ img{
     width: 100%;
     max-width: 300px;
 }
+
 #filtro{
+    display: flex;
+    position:fixed;
+    top: 75px;
+    color: white;
     background-color: black;
     width: 280px;
-    height: 100vh;
-    position: fixed;
+    height: calc(100% - 75px);
+    
     transition-duration: 1s;
-    left: 0px;
-    top: 100px;
-    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 @media (min-width:720px) {
